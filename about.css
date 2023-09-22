@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metamorphous&family=Mina&family=Prosto+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.content {
+    margin-right: 2rem;
+}
+
+.content>h1 {
+    color: #ffb433;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 3.2rem;
+}
+
+.content>p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    color: #fff;
+
+}
+
+.imgContainer>img {
+    height: 50vh;
+    width: 50vh;
+    border-radius: 2rem;
+    margin: 5vh 0;
+    transition: all 0.6s ease;
+}
