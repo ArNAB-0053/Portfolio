@@ -10,9 +10,9 @@
     padding: 0;
 }
 
-/* html {
+html {
     overflow: hidden;
-} */
+}
 
 .main {
     margin-top: 4vh;
@@ -28,6 +28,7 @@
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 5vh;
+    margin-bottom: 100vh;
 }
 
 .content {
