@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Skills</title>
     <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="skills.css" />
   </head>
+
   <body>
     <div id="mainContainer">
       <header>
@@ -14,7 +16,7 @@
             <h1>Arnab's Portfolio</h1>
           </div>
           <ul>
-            <li><a href="/">Home</a></li>
+            <li><a href="/index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="skills.html">Skills</a></li>
             <li><a href="projects.html">Projects</a></li>
@@ -22,7 +24,124 @@
           </ul>
         </nav>
       </header>
+      <main class="main">
+        <div class="container">
+          <div class="content">
+            <h1>
+              Programming <br />
+              Languages
+            </h1>
+            <div class="langContainer">
+              <div class="lang">
+                <div class="imgLang">
+                  <img src="images/js.png" alt="JavaScript" />
+                </div>
+                <div class="graphDiv">
+                  <span class="details">
+                    <h3>JavaScript</h3>
+                    <h3 id="percentageJS"></h3>
+                  </span>
+                  <span class="graph">
+                    <div class="color" id="js"></div>
+                  </span>
+                </div>
+              </div>
+              <div class="lang">
+                <div class="imgLang">
+                  <img src="images/python.png" alt="Python" />
+                </div>
+                <div class="graphDiv">
+                  <span class="details">
+                    <h3>Python</h3>
+                    <h3 id="percentagePy"></h3>
+                  </span>
+                  <span class="graph">
+                    <div class="color" id="python"></div>
+                  </span>
+                </div>
+              </div>
+
+              <div class="lang">
+                <div class="imgLang">
+                  <img src="images/c.png" alt="C" />
+                </div>
+                <div class="graphDiv">
+                  <span class="details">
+                    <h3>C</h3>
+                    <h3 id="percentageC"></h3>
+                  </span>
+                  <span class="graph">
+                    <div class="color" id="c"></div>
+                  </span>
+                </div>
+              </div>
+
+              <div class="lang">
+                <div class="imgLang">
+                  <img src="images/java.png" alt="Java" id="javaImg" />
+                </div>
+                <div class="graphDiv">
+                  <span class="details">
+                    <h3>Java</h3>
+                    <h3 id="percentageJava"></h3>
+                  </span>
+                  <span class="graph">
+                    <div class="color" id="java"></div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="content" id="web">
+            <h1>
+              Web <br />
+              Development
+            </h1>
+            <div class="skill">
+              <div class="outer">
+                <div class="inner">
+                  <h3 id="number-web"></h3>
+                </div> 
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <defs>
+                  <linearGradient id="GradientColor">
+                    <stop offset="0%" stop-color="#e91e63" />
+                    <stop offset="100%" stop-color="#673ab7" />
+                  </linearGradient>
+                </defs>
+                <circle class="circleWeb" cx="80" cy="80" r="70" stroke-linecap="round" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="content">
+            <h1>
+              Machine <br />
+              learning
+            </h1>
+            <div class="skill">
+              <div class="outer">
+                <div class="inner">
+                  <h3 id="number-ML"></h3>
+                </div> 
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <defs>
+                  <linearGradient id="GradientColor">
+                    <stop offset="0%" stop-color="#e91e63" />
+                    <stop offset="100%" stop-color="#673ab7" />
+                  </linearGradient>
+                </defs>
+                <circle class="circleML" cx="80" cy="80" r="70" stroke-linecap="round" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
     <script src="header.js"></script>
+    <script src="skills.js"></script>
   </body>
 </html>

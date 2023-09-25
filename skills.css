@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metamorphous&family=Mina&family=Prosto+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* html {
+    overflow: hidden;
+} */
+
+.main {
+    margin-top: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    flex: 1 1 10rem;
+    border-radius: 0.8em;
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    padding: 0.7rem;
+    height: 32rem;
+    background: linear-gradient(145deg, #31303c, #3a3948);
+    box-shadow: 5px 5px 10px #292833,
+        -5px -5px 10px #434253;
+}
+
+.content:hover {
+    border: 2px solid #ffb433;
+}
+
+.content>h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    color: #ffb433;
+    margin-top: 7vh;
+    margin-bottom: 5vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.langContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.lang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgLang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    border-radius: 5px;
+    background: linear-gradient(315deg, #31303c, #3a3948);
+    box-shadow: -5px -5px 11px #16151b,
+        5px 5px 11px #56556b;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem;
+}
+
+.lang>div>img {
+    width: 2rem;
+    height: 2rem;
+}
+
+#javaImg {
+    width: 1.4rem;
+    height: 2.2rem;
+}
+
+.graphDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: none;
+    height: 1.2rem;
+    width: 15rem;
+}
+
+.graph {
+    height: 1.2rem;
+    width: 15rem;
+    border-radius: 2rem;
+    background: #25252c;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: #ffb433;
+    font-family: 'Mooli', sans-serif;
+    font-size: 0.8rem;
+    margin-bottom: 0.1rem;
+}
+
+.color {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    height: 1.2rem;
+    background: #ffb433;
+    z-index: 1;
+    border-radius: 2rem;
+}
+
+#js {
+    animation: jsAnime 2s linear forwards;
+}
+
+@keyframes jsAnime {
+    0% {
+        width: 0;
+    }
+
+    100%{
+        width: 11.25rem;
+    }
+}
+
+#python {
+    animation: pythonAnime 2s linear forwards;
+}
+
+@keyframes pythonAnime {
+    0% {
+        width: 0;
+    }
+
+    100%{
+        width: 12.75rem;
+    }
+}
+
+#c {
+    animation: cAnime 2s linear forwards;
+}
+
+@keyframes cAnime {
+    0% {
+        width: 0;
+    }
+
+    100%{
+        width: 13.05rem;
+    }
+}
+
+#java {
+    animation: javaAnime 2s linear forwards;
+}
+
+@keyframes javaAnime {
+    0% {
+        width: 0;
+    }
+
+    100%{
+        width: 10.2rem;
+    }
+}
+
+#web {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.skill {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    background: #363543;
+    box-shadow: 5px 5px 10px rgb(41, 40, 51),
+        -5px -5px 10px rgb(67, 66, 83);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner {
+    width: 7.5rem;
+    height: 7.5rem;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 2, 10, 0.2),
+        inset -4px -4px 6px -1px rgba(67, 66, 83, 0.7),
+        -0.5px -0.5px 0px rgba(41, 40, 51, 1),
+        0.5px 0.5px 0px rgba(255, 255, 255, 0.15),
+        0px 12px 10px -10px rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+circle {
+    fill: none;
+    stroke: #ffb433;
+    /* stroke: url(#GradientColor); */
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+    background: #000;
+}
+
+.circleWeb {
+    animation: progressBarWeb 2s linear forwards;
+}
+
+.circleML {
+    animation: progressBarML 2s linear forwards;
+}
+
+@keyframes progressBarWeb {
+    100% {
+        stroke-dashoffset: 188;
+    }
+}
+
+@keyframes progressBarML {
+    100% {
+        stroke-dashoffset: 259.6;
+    }
+}
+
+svg {
+    position: absolute;
+    margin: -10rem 0rem;
+    width: 10rem;
+    height: 10rem;
+}
+
+#number-web, #number-ML {
+    color: #ffb433;
+    font-family: 'Mooli', sans-serif;
+}

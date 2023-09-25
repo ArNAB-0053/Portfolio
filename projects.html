@@ -1,28 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects</title>
-    <link rel="stylesheet" href="header.css"/>
-  </head>
-  <body>
-    <div id="mainContainer">
-      <header>
-        <nav>
-          <div class="nav-div">
-            <h1>Arnab's Portfolio</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects</title>
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="projects.css" />
+</head>
+
+<body>
+  <div id="mainContainer">
+    <header>
+      <nav>
+        <div class="nav-div">
+          <h1>Arnab's Portfolio</h1>
+        </div>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="content">
+          <div class="project">            
+            <div id="proH1">
+              <h1>DoctPlus</h1>
+            </div>  
+            <p>DoctPlus is Web-based application that uses Machine Learning as a feature, it can predict human diseases
+              like Diabetes, Heart Disease & Parkinson's Disease.</p>
+            <div class="projectLink">
+              <a href="https://github.com/ArNAB-0053/DoctPlus">View in Github</a>
+            </div>
           </div>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-    </div>
-    <script src="header.js"></script>
-  </body>
+          <div class="project" id="middle">            
+            <div id="proH1">
+              <h1>Groot</h1>
+            </div>  
+            <p>Groot is an Android application that uses Machine Learning as a feature, it can detect plant diseases by
+              using leaf image as an input. I handled the Machine Learning part.</p>
+              <div class="projectLink">
+                <a href="https://github.com/ArNAB-0053/Groot-App">View in Github</a>
+              </div>
+          </div>
+          <div class="project">            
+            <div id="proH1">
+              <h1>PdfFuse</h1>
+            </div>  
+            <p>PdfFuse is Web-based application that can merge multiple PDFs. I used Flask to make the python model online then the HTMl, CSS & JavaScript.</p>
+            <div class="projectLink">
+              <a href="https://github.com/ArNAB-0053/PdfFuse-The-PDF-Merger">View in Github</a>
+            </div>
+          </div>          
+          <div class="project">            
+            <div id="proH1">
+              <h1>AttendEase</h1>
+            </div>
+            <p>I develop a smart attendance system called AttendEase using OpenCV python. It will take human face as an input and if that face present in the database then it will mark that student as present.</p>
+              <div class="projectLink">
+                <a href="https://github.com/ArNAB-0053/Smart-Attendance-System-Using-OpenCV">View in Github</a>
+              </div>
+          </div>
+          <div class="project" id="middle">            
+            <div id="proH1">
+              <h1>Voler</h1>
+            </div>  
+            <p>Voler is the OpenCV project, by using it user can control the volumn of their PC or Laptop by only using two fingers. I use OpenCV to make it real-time, Mediapipe for finger detection and Pycaw to control volumn.</p>
+              <div class="projectLink">
+                <a href="https://github.com/ArNAB-0053/Project-1-Volume-Control-by-Hand">View in Github</a>
+              </div>
+          </div>
+          <div class="project">            
+            <div id="proH1">
+              <h1>FingerTally</h1>
+            </div>  
+            <p>FingerTally is an OpenCV project to count fingers. I use OpenCV to make it real-time and Mediapipe to detect fingers. I build HandDetection module and I use that module to detect and to count fingers.</p>
+            <div class="projectLink">
+              <a href="https://github.com/ArNAB-0053/Project-2-Finger-Counter/blob/master/FingerCounter.py">View in Github</a>
+            </div>
+          </div>
+          <div class="project">            
+            <div id="proH1">
+              <h1>FeelDec</h1>
+            </div>  
+            <p>FeelDec is the emotion detection project using haar cascade. It will first detect the face then according to the person's expression it will detect the emotion.</p>
+              <div class="projectLink">
+                <a href="https://github.com/ArNAB-0053/Emotion-Detection">View in Github</a>
+              </div>
+          </div>
+          <div class="project" id="middle">
+            <div id="proH1">
+              <h1>Meshify</h1>
+            </div>  
+            <p>Meshify is an OpenCV project to identify face mesh of a person. I use OpenCV to make it real-time and Mediapipe to detect face of a person.</p>
+              <div class="projectLink">
+                <a href="https://github.com/ArNAB-0053/Face-Mesh-detector">View in Github</a>
+              </div>
+          </div>
+          <div class="project">
+            <div id="proH1">
+              <h1>Poser</h1>
+            </div>            
+            <p>Poser is an OpenCV project that can detect the face. I use OpenCV for make it real-time and Mediapipe to detect an human and we can estimate the pose of a human too.</p>
+            <div class="projectLink">
+              <a href="https://github.com/ArNAB-0053/proH1-Estimation">View in Github</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="projectgithubLink">
+          <a class="projectgithubLink" href="https://github.com/ArNAB-0053?tab=repositories">View more on my github
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+              <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+            </svg>
+          </a>
+      </div>
+    </main>
+  </div>
+  <script src="header.js"></script>
+</body>
+
 </html>

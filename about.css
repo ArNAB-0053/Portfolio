@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Metamorphous&family=Mina&family=Prosto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap');
 
 * {
     margin: 0;
@@ -11,6 +12,7 @@
 }
 
 .container {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -18,6 +20,7 @@
 }
 
 .content {
+    width: 100%;
     margin-right: 2rem;
 }
 
@@ -42,4 +45,172 @@
     border-radius: 2rem;
     margin: 5vh 0;
     transition: all 0.6s ease;
+}
+
+.educationContainer {
+    width: 102%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 4vh;
+}
+
+.education {
+    min-height: 20vh;
+    flex: 1 1 10rem;
+    color: #ffb433;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+    background: linear-gradient(145deg, #31303c, #3a3948);
+    box-shadow: 20px 20px 52px #272731,
+        -20px -20px 52px #454355;
+    padding: 4vh;
+    flex-direction: column;
+    transition: all 0.8s ease;
+}
+
+.education:hover {
+    border: 2px solid #ffb433;
+}
+
+#highersecondary {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.education>h2, .education>h3 {
+    color: #fff;
+    text-align: center;
+    font-family: 'Mooli', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+
+.eduContent {
+    flex-direction: column;
+    height: 8rem;
+    width: 14rem;
+    position: absolute;
+    top: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.8s ease;
+    z-index: -1;
+    padding: 1.2rem;
+}
+
+.education:hover .eduContent {
+    background: #ffb433;
+    position: absolute;
+    color: #000;
+    top: 90vh;
+    z-index: 1;
+    border-radius: 1.2rem;
+}
+
+.eduContent>p {
+    text-align: center;
+    font-family: 'Noticia Text', serif;
+}
+
+#edu-p {
+    font-family: 'Croissant One', cursive;
+    font-size: 1.2rem;
+}
+
+#secondaryContainer {
+    background: #282834;
+    padding: 2vh 5vw 10vh 5vw;
+}
+
+.hackathonDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
+    flex-wrap: wrap;
+}
+
+.hackathon {
+    height: 40vh;
+    flex: 1 1 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 3vh;
+    flex-direction: column;
+    transition: all 0.8s ease;
+    border: 2px solid #fff;
+    margin-top: 3rem;
+    border-radius: 2rem;
+}
+
+.hackathon:hover {
+    margin-top: -3rem;
+}
+
+.hackathonDiv:hover>.hackathon:not(:hover) {
+    margin-top: 8rem;
+}
+
+#ideathon {
+    margin-left: 4vh;
+    margin-right: 4vh;
+}
+
+.hackathon>h2 {
+    color: #fff;
+    margin-bottom: 1vh;
+    font-family: 'Croissant One', cursive;
+    text-transform: uppercase;
+    background-color: #282834;
+    border-radius: 2rem;
+    padding: 4vh;
+    margin-top: -9.5vh;
+    margin-left: -10vw;
+}
+
+.hackathon>p {
+    font-family: 'Noticia Text', serif;
+    color: #fff;
+    font-size: 0.95rem;
+}
+
+#projectDesc {
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+
+.cerLink {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: #ffb43379 0px 5px 15px;
+    background: #ffb433;
+    border-radius: 2rem;
+    width: 50%;
+}
+
+.cerLink:hover {
+    background: #ffb433aa;
+    box-shadow: #ffb433c9 0px 5px 15px;
+}
+
+.cerLink>a {
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    margin: 0.4rem;
+    font-family: 'Mooli', sans-serif;
+    /* text-transform: uppercase; */
+    font-size: 0.9rem;
+    font-weight: 700;
 }

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.project {
+    flex: 1 1 20rem;
+    border: 0.2rem solid #fff;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.6s ease;
+}
+
+#middle {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#proH1>h1 {
+    color: #fff;
+    background: #363543;
+    margin-top: -2.6rem;
+    padding: 0 1.2rem;
+    font-family: 'Croissant One', cursive;
+    text-align: center;
+}
+
+#proH1 {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+}
+
+.project:hover {
+    margin-top: -2rem;
+}
+
+.content:hover>.project:not(:hover) {
+    margin-top: 2rem;
+}
+
+.project>p {
+    margin-top: 2rem;
+    color: #fff;
+    font-family: 'Noticia Text', serif;
+}
+
+.projectLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffb433;
+    box-shadow: #ffb43379 0px 5px 15px;
+    width: 50%;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.projectLink:hover {
+    background: #ffb433aa;
+    box-shadow: #ffb433c9 0px 5px 15px;
+}
+
+.projectLink>a {
+    text-decoration: none;
+    color: #000;
+    margin: 0.7rem;
+    font-family: 'Mooli', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.projectgithubLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5rem;
+    background: linear-gradient(145deg, #31303c, #3a3948);
+    box-shadow:  -5px -5px 46px #16151b,
+             5px 5px 46px #56556b;
+    margin-top: 10vh;
+    margin-bottom: 6vh;
+    padding: 1rem 2rem;
+    font-family: 'Mooli', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    color: #ffb433;
+    border: 0.1rem solid;
+}
+
+.projectgithubLink:hover {
+    border: 0.1rem solid #ffb433;
+    background: #ffb433;
+    color: #363543;
+}
+
+#projectgithubLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
