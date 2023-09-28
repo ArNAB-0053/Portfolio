@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metamorphous&family=Mina&family=Prosto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    margin-top: 2rem;
+    height: 100vh;
+    background: #363543;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #282834;
+    padding: 5rem;
+    border-radius: 2rem;
+    border-radius: 2rem;
+    background: #282834;
+    box-shadow: 35px 35px 63px #101015,
+        -35px -35px 63px #404053;
+    margin-top: 2rem;
+}
+
+.contentDetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contentDetails>h1 {
+    color: #ffb433;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 3.2rem;
+}
+
+.logo-div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.logo-div>a {
+    margin: 5rem 2rem 0 2rem;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #24242f, #2b2b38);
+    box-shadow: 5px 5px 10px #22222c,
+        -5px -5px 10px #2e2e3c;
+    width: 10vh;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s ease;
+
+}
+
+.logo-div>a>svg {
+    width: 45vw;
+    height: 4.5vh;
+    color: #c4c3c3;
+}
+
+.logo-div>a:hover {
+    box-shadow: 5px 5px 10px #ffb433c3,
+        -5px -5px 10px #ffb433df;
+}
+
+.logo-div>a:hover svg {
+    color: #ffb433;
+}
+
+.content-img>img {
+    width: 18vw;
+}
