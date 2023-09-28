@@ -17,6 +17,29 @@ header {
     padding: 2vh 6vw 10vh 6vw;
 }
 
+
+
+/* ************* ANIMATION FOR NEW PAGE *************** */
+
+body {
+    animation: newPageAnimation 1s linear forwards;
+    background: #363543;
+}
+
+@keyframes newPageAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/******************************************************/
+
 nav{
     width: 100%;
     display: flex;
