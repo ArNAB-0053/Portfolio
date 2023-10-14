@@ -11,7 +11,7 @@
     padding: 0;
 }
 
-html{
+html {
     overflow: hidden;
 }
 
@@ -73,7 +73,6 @@ html{
     align-items: center;
     justify-content: center;
     transition: all 0.8s ease;
-
 }
 
 .logo-div>a>svg {
@@ -93,4 +92,97 @@ html{
 
 .content-img>img {
     width: 18vw;
+}
+
+@media screen and (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        font-size: 70%;
+        overflow: hidden;
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #mainContainer {
+        margin: 0;
+        padding: 0;
+    }
+
+    #contact>svg {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .content-img {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .content {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #282834;
+        padding: 5rem;
+        border-radius: 2rem;
+        border-radius: 2rem;
+        background: #282834;
+        box-shadow: 35px 35px 63px #101015,
+            -35px -35px 63px #404053;
+        margin-top: 5rem;
+        margin-bottom: 0;
+    }
+
+    .logo-div {
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .logo-div>a {
+        margin: 5rem 0 0 0;
+        border-radius: 50%;
+        background: linear-gradient(145deg, #24242f, #2b2b38);
+        box-shadow: 5px 5px 10px #22222c,
+            -5px -5px 10px #2e2e3c;
+        width: 6vh;
+        height: 6vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.8s ease;
+    }
+
+    .logo-div>a>svg {
+        width: 5vw;
+        color: #c4c3c3;
+    }
+
+    .contentDetails>h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        padding: 0 5rem;
+    }
 }

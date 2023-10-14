@@ -30,7 +30,7 @@ setInterval(() => {
     pyCount += 1;
     percentagePy.innerHTML = pyCount + "%";
   }
-}, 22);
+}, 22.2);
 
 // C
 setInterval(() => {
@@ -40,7 +40,7 @@ setInterval(() => {
     cCount += 1;
     percentageC.innerHTML = cCount + "%";
   }
-}, 21.3);
+}, 22);
 
 // Java
 setInterval(() => {
@@ -50,7 +50,7 @@ setInterval(() => {
     javaCount += 1;
     percentageJava.innerHTML = javaCount + "%";
   }
-}, 28);
+}, 27);
 
 // Web Development
 setInterval(() => {
@@ -70,4 +70,4 @@ setInterval(() => {
     counterML += 1;
     numberML.innerHTML = counterML + "%";
   }
-}, 32);
+}, 44);

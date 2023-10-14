@@ -45,10 +45,11 @@ html {
     background: linear-gradient(145deg, #31303c, #3a3948);
     box-shadow: 5px 5px 10px #292833,
         -5px -5px 10px #434253;
+    border: 0.1rem solid #292833;
 }
 
 .content:hover {
-    border: 2px solid #ffb433;
+    border: 0.1rem solid #ffb433;
 }
 
 .content>h1 {
@@ -266,7 +267,7 @@ circle {
     }
 }
 
-svg {
+.skill>svg {
     position: absolute;
     margin: -10rem 0rem;
     width: 10rem;
@@ -276,4 +277,109 @@ svg {
 #number-web, #number-ML {
     color: #ffb433;
     font-family: 'Mooli', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #mainContainer {
+        margin: 0;
+        padding: 0;
+    }
+
+    .res-header-div {
+        /* background: #282834cf;         */
+        background: #ffb129;
+        -webkit-backdrop-filter: blur(4px);
+        backdrop-filter: blur(4px);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100vw;
+        left: 0;
+        position: fixed;
+        top: 0;
+        padding: 0.1rem 0;
+        z-index: 1;
+    }
+
+    .res-header-div>img {
+        width: 2rem;
+        height: 2rem;
+        margin-left: 6vw;
+    }
+
+    .res-header-div>h1 {
+        /* color: #ffb433; */
+        color: #282834;
+        font-family: 'Mooli', sans-serif;
+        font-size: 2.5rem;
+        margin-right: 6vw;
+    }
+
+    #web {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .container {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin: 0 0 10vh 0;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        border-radius: 0.8em;
+        border-top-right-radius: 3rem;
+        border-bottom-left-radius: 3rem;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        width: 70%;
+        font-size: 70%;
+        margin-top: 4rem;
+    }
+
+    .content>h1 {
+        margin-top: 2vh;
+        margin-bottom: 5vh;
+        font-size: 1.5rem;
+    }
+
+    .details>h3, #percentageC {
+        font-size: 0.8rem;
+    }
+
+    #skills>svg {
+        width: 2rem;
+        height: 2rem;
+    }
 }

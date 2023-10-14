@@ -6,24 +6,22 @@ let resumeTxt = document.querySelector(".resume-github>div>a");
 let socialmediaSvg = document.querySelectorAll(".socialmedia>a>svg");
 let socialmediaImg = document.querySelector(".socialmedia>a>img");
 
-followDiv.addEventListener("mouseenter", () => {
-  (follow.innerHTML = "Follow me on,"), (secondContainer.style.top = "72vh");
-  follow.style.top = "0";
-});
+//---------- Follow me text---------- //
 
-followDiv.addEventListener("mouseleave", () => {
-  (follow.innerHTML = ""),
-    (secondContainer.style.top = "74vh"),
-    (follow.style.top = "3vh");
-});
+function handleMouseEnter() {
+  follow.innerHTML = 'Follow me on,';
+  secondContainer.style.top = '62vh';
+  follow.style.top = '0';
+}
 
-// resume.addEventListener("mouseenter", () => {
-//   resumeTxt.style.color = "#ffb433";
-// });
+function handleMouseLeave() {
+  follow.innerHTML = '';
+  secondContainer.style.top = '66vh';
+  follow.style.top = '3vh';
+}
 
-// resume.addEventListener("mouseleave", () => {
-//   resumeTxt.style.color = "#282834";
-// });
+followDiv.addEventListener('mouseenter', handleMouseEnter);
+followDiv.addEventListener('mouseleave', handleMouseLeave);
 
 socialmediaSvg.forEach(function (e) {
   e.addEventListener("mouseenter", () => {
@@ -34,9 +32,22 @@ socialmediaSvg.forEach(function (e) {
   });
 });
 
+
+// ---------- Social media links animation ---------- //
+
 socialmediaImg.addEventListener("mouseenter", () => {
   socialmediaImg.style.marginTop = "-3vh";
 });
 socialmediaImg.addEventListener("mouseleave", () => {
   socialmediaImg.style.marginTop = "0vh";
 });
+
+
+//------------ For Responsive ------------//
+
+if (window.innerWidth <= 768) {
+  followDiv.removeEventListener('mouseenter', handleMouseEnter);
+  followDiv.removeEventListener('mouseleave', handleMouseLeave);
+}
+
+//----------------------------------------//

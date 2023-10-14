@@ -1,21 +1,34 @@
 let headerEle = document.querySelectorAll("li>a");
 let li = document.querySelectorAll("li");
 
-headerEle.forEach(function (e) {
-  e.addEventListener("mouseenter", () => {
-    e.style.borderBottom = "0.1rem solid #fff";
-  });
+// Underline Animation
+function headerHover(event) {
+  event.currentTarget.style.borderBottom = "0.1rem solid #fff";
+}
 
-  e.addEventListener("mouseleave", () => {
-    e.style.borderBottom = "none";
-  });
-});
+function headerNotHover(event) {
+  event.currentTarget.style.borderBottom = "none";
+}
 
-li.forEach(function (e) {
-  e.addEventListener("mouseenter", () => {
-    e.style.marginTop = "-0.3rem";
+if (window.innerWidth > 768) {
+  headerEle.forEach(function (e) {
+    e.addEventListener("mouseenter", headerHover);
+    e.addEventListener("mouseleave", headerNotHover);
   });
-  e.addEventListener("mouseleave", () => {
-    e.style.marginTop = "0";
+}
+
+// Margin top Animation
+function headerMarginTop(event) {
+  event.currentTarget.style.marginTop = "-0.3rem";
+}
+
+function headerNotMarginTop(event) {
+  event.currentTarget.style.marginTop = "0";
+}
+
+if (window.innerWidth > 768) {
+  li.forEach(function (e) {
+    e.addEventListener("mouseenter", headerMarginTop);
+    e.addEventListener("mouseleave", headerNotMarginTop);
   });
-});
+}

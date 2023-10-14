@@ -11,6 +11,10 @@
     padding: 0;
 }
 
+body {
+    overflow: hidden;
+}
+
 .container {
     width: 100%;
     display: flex;
@@ -39,12 +43,27 @@
 
 }
 
+.imgContainer {
+    width: 60vh;
+    height: 59vh;
+    border-radius: 2rem;
+    overflow: hidden;
+    /* background: #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .imgContainer>img {
     height: 58vh;
-    width: 45vh;
+    width: inherit;
     border-radius: 2rem;
     margin: 5vh 0;
     transition: all 0.6s ease;
+}
+
+.imgContainer:hover img {
+    scale: 1.1;
 }
 
 .educationContainer {
@@ -82,7 +101,8 @@
     margin-right: 5vw;
 }
 
-.education>h2, .education>h3 {
+.education>h2,
+.education>h3 {
     color: #fff;
     text-align: center;
     font-family: 'Mooli', sans-serif;
@@ -113,6 +133,10 @@
     top: 97vh;
     z-index: 1;
     border-radius: 1.2rem;
+}
+
+.educationContainer:hover>.education {
+    margin-top: 8rem;
 }
 
 .eduContent>p {
@@ -213,4 +237,214 @@
     /* text-transform: uppercase; */
     font-size: 0.9rem;
     font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 75%;
+    }
+
+    .imgContainer {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+
+    .eduContent {
+        height: 8rem;
+        width: 14rem;
+        position: relative;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: all 0.8s ease;
+        z-index: 1;
+        padding: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 70%;
+        overflow-x: hidden;
+    }
+
+    #mainContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+        margin: 6rem 0;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .imgContainer {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .content {
+        width: 90vw;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .content>h1 {
+        margin-bottom: 0rem;
+        margin-top: 2rem;
+    }
+
+    .educationContainer {
+        width: 100%;
+        flex-direction: column;
+        margin: -0.5rem 0 6rem 0;
+        padding: 0;
+        background: none;
+        box-shadow: none;
+    }
+
+    .education {
+        min-height: 20vh;
+        width: 100%;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom-left-radius: 4rem;
+        border-top-right-radius: 4rem;
+        padding: 0;
+        flex-direction: column;
+        margin: 2rem 0;
+        background: linear-gradient(45deg, #2a2a32, #32323b);
+        box-shadow: 5px -5px 10px #26262d,
+            -5px 5px 10px #383841;
+    }
+
+    .educationContainer:hover>.education {
+        margin-top: 2rem;
+    }
+
+    .education>h2 {
+        margin: 2.5rem 1rem 0 1rem;
+    }
+
+    .eduContent {
+        width: 75%;
+        margin: 1rem 0;
+        background: #cdcdcd;
+        color: #24242f;
+        border-radius: 1.2rem;
+        margin-bottom: 2rem;
+        top: 0;
+        position: relative;
+        z-index: 0;
+    }
+
+    .eduContent>p {
+        font-size: 1.5rem;
+    }
+
+    .education:hover .eduContent {
+        position: relative;
+        color: #24242f;
+        top: 0;
+        z-index: 1;
+        border-radius: 1.2rem;
+        background: #cdcdcd;
+    }
+
+    #highersecondary {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #ideathon {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #secondaryContainer {
+        padding: 0;
+        margin-top: -3rem;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hackathonDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100%;
+        flex-wrap: wrap;
+    }
+
+    .hackathon {
+        height: 100%;
+        flex: 1 1 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding: 3vh;
+        flex-direction: column;
+        transition: all 0.8s ease;
+        border: 2px solid #fff;
+        margin-top: 6rem;
+        border-radius: 2rem;
+    }
+
+    #hackfest {
+        margin-bottom: 12vh;
+    }
+
+    .hackathon:hover {
+        margin-top: 6rem;
+    }
+
+    .hackathonDiv:hover>.hackathon:not(:hover) {
+        margin-top: 6rem;
+    }
+
+    .hackathon>h2 {
+        margin-left: 0;
+    }
+
+    .hackathon>h2 {
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        margin-top: -8.5vh;
+    }
+
+    #myedu {
+        margin-bottom: 0.8rem;
+        margin-top: 4rem;
+    }
+
+    #about>svg {
+        width: 3rem;
+        height: 3rem;
+    }
 }

@@ -10,6 +10,13 @@
     padding: 0;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
 html {
     overflow: hidden;
 }
@@ -20,7 +27,7 @@ html {
 
 .container {
     width: 100%;
-    height: 100%;
+    height: auto;
     background: #363543;
     display: flex;
     align-items: center;
@@ -42,46 +49,51 @@ html {
     color: #fff;
 }
 
-.myContent>h2 {
+.myDetails>h2 {
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 2.2rem;
 }
 
-.myContent>h1 {
+.myDetails>h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 3.2rem;
     color: #ffb433;
 }
 
-.myContent>p {
+.myDetails>p {
     font-family: 'Lato', sans-serif;
     font-size: 1.8rem;
     margin-top: 1rem;
 }
 
-.resume-github {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: start;
+.imghidden {
+    width: 0;
+    height: 0;
+    display: none;
 }
 
-.resume-github>div {
-    box-shadow: #ffb43379 0px 5px 15px;
-    background: #ffb433;
-    padding: 0.4rem 1.2rem;
-    margin-top: 6vh;
-    border-radius: 0.2rem;
+.resume-cv {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-top: 2rem;
+}
+
+#resume {
     transition: all 1s ease;
 }
 
-.resume-github>div:hover {
+#resume>div:hover {
     background: #ffb433aa;
     box-shadow: #ffb433c9 0px 5px 15px;
 }
 
-.resume-github>div>a {
+#resume>a {
+    box-shadow: #ffb43379 0px 5px 15px;
+    background: #ffb433;
+    padding: 0.4rem 1.2rem;
+    border-radius: 0.2rem;
     text-decoration: none;
     color: #282834;
     font-size: 1.1rem;
@@ -96,9 +108,19 @@ html {
     display: flex;
     align-items: center;
     justify-content: end;
+    border-radius: 50%;
 }
 
-.imgContainer>img {
+.img2ndCotainer {
+    height: 50vh;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img2ndCotainer>img {
     height: 50vh;
     width: 50vh;
     border-radius: 50%;
@@ -106,9 +128,8 @@ html {
     transition: all 0.6s ease;
 }
 
-.imgContainer>img:hover {
-    width: 51.5vh;
-    height: 51.5vh;
+.img2ndCotainer:hover img{
+    scale: 1.1;
 }
 
 #secondContainer {
@@ -118,7 +139,7 @@ html {
     justify-content: center;
     flex-direction: column;
     position: absolute;
-    top: 74vh;
+    top: 66vh;
     left: 50%;
     transform: translate(-50%, 0);
     border-radius: 0.5rem;
@@ -144,7 +165,7 @@ html {
         28px -28px 55px #383848;
 }
 
-#secondContent>div>h1 {
+#follow {
     color: #ffb433;
     position: relative;
     font-size: 2.2rem;
@@ -152,6 +173,18 @@ html {
     top: 3vh;
     transition: all 1.2s ease;
     z-index: 1;
+}
+
+#followRes {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+.socialmediaRes {
+    width: 0;
+    height: 0;
+    display: none;
 }
 
 .socialmedia {
@@ -187,4 +220,294 @@ html {
 .thirdContainer {
     background: #282834;
     height: 100vh;
+}
+
+.thirdContainer>nav {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+.blackColor {
+    background: #282833;
+    height: 100vh;
+}
+
+@media screen and (max-width: 1024px) {
+    .myDetails {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .myDetails>h2 {
+        font-size: 7vh;
+    }
+    
+    .myDetails>h1 {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: inherit;
+        padding: 0;
+        margin: 4vh 0;
+    }
+    
+    .myContent>p {
+        font-size: 1.5rem;
+        margin-top: 2vh;
+    }
+
+    .imghidden {
+        width: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-right: 4vw;
+    }
+    
+    .imghidden>img {
+        width: 15vh;
+        height: 19vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.5rem;
+    }
+    
+    .imgContainer {
+        height: 0;
+        width: 0;
+        display: none;
+    }
+    
+    .myContent>h2 {
+        font-size: 2rem;
+        margin-bottom: 2vh;
+    }
+
+    #secondContainer {
+        animation: animemove 0.8s linear forwards;
+    }
+    
+    @keyframes animemove {
+        from {
+            margin-top: 100vh;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+
+        to {
+            margin-top: -5vh;
+        }
+    }
+    
+    #followRes {
+        width: 100%;
+        height: 100%;
+        display: block;
+        color: #ffb433;
+        font-size: 2.2rem;
+        font-family: 'Croissant One', cursive;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 70%;
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #mainContainer {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 100%;
+        background: #363543;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .myContent {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        flex-direction: column;
+        color: #fff;
+        background-image: url('../images/photo3.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 1rem;
+        margin-top: -1rem;
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+    }
+
+    .myDetails {
+        width: 100%;
+        height: 100vh;
+        border-radius: 1rem;
+        display: flex;
+        align-items: start;
+        justify-content: flex-end;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.3);
+        -webkit-backdrop-filter: blur(1px);
+        backdrop-filter: blur(2px);
+        border: 1px solid rgba(0, 0, 0, 0.175);
+        position: absolute;
+        margin-top: -2rem;
+    }
+
+    .myDetails>h2 {
+        font-family: 'Merriweather Sans', sans-serif;
+        font-size: 2.2rem;
+        margin: 0 2rem 0 2rem;
+        z-index: 1;
+        position: relative;
+        bottom: 21vh;
+    }
+
+    .myDetails>h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: 3.2rem;
+        color: #ffb433;
+        margin: 0 2rem 0 2rem;
+        z-index: 1;
+        position: relative;
+        bottom: 21vh;
+    }
+
+    .myDetails>p {
+        font-family: 'Lato', sans-serif;
+        font-size: 1.8rem;
+        margin-top: 1rem;
+        margin: 0 0rem 1rem 2rem;
+        z-index: 1;
+        position: relative;
+        bottom: 20vh;
+    }
+
+    .resume-cv {
+        margin: 2rem 0rem 0.5rem 4rem;
+        position: relative;
+        bottom: 20vh;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+    }
+
+    
+
+    .imghidden {
+        width: 0;
+        padding: 0;
+        display: none;
+    }
+
+    .imgContainer {
+        height: 0;
+        width: 0;
+        display: none;
+    }
+
+    @keyframes animestill {
+        from {
+            top: 0;
+            left: 50%;
+        }
+
+        to {
+            top: 0;
+            left: 50%;
+        }
+    }
+
+    #secondContainer {
+        width: 0;
+        height: 0;
+        display: none;
+    }
+
+
+    #follow {
+        position: relative;
+        top: 0;
+    }
+
+    #follow:hover {
+        top: 0;
+    }
+
+    #home>svg {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .socialmediaRes {
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin: 2rem 1rem;
+        z-index: 1;
+        position: relative;
+        bottom: 23vh;
+    }
+
+    .socialmediaRes>a {
+        color: #ffb433;
+        text-decoration: none;
+        margin: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+    }
+
+    .socialmediaRes>a>svg {
+        height: 2.8vh;
+        width: 2.8vh;
+        transition: all 0.6s ease;
+        z-index: 1;
+    }
+
+    .socialmediaRes>a>img {
+        height: 2.8vh;
+        width: 2.8vh;
+        border-radius: 0.2rem;
+        transition: all 0.6s ease;
+        z-index: 1;
+    }
+
+    .blackColor {
+        width: 0;
+        height: 0;
+        display: none;
+    }
 }
