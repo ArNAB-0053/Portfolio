@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 2rem;
+    margin-top: -2.3rem;
 }
 
 .content {
@@ -140,6 +140,10 @@
         font-size: 70%;
         overflow-y: auto;
         overflow-x: hidden;
+    }
+
+    .container {
+        margin-top: 2rem;
     }
 
     #project>svg {
