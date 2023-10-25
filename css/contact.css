@@ -58,12 +58,13 @@ html {
     width: 50%;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: start;
+    margin-right: 12rem;
 }
 
 .logo-div>a {
     margin: 5rem 2rem 0 2rem;
-    border-radius: 50%;
+    border-radius: 100%;
     background: linear-gradient(145deg, #24242f, #2b2b38);
     box-shadow: 5px 5px 10px #22222c,
         -5px -5px 10px #2e2e3c;
@@ -92,6 +93,43 @@ html {
 
 .content-img>img {
     width: 18vw;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1362px) {
+    html {
+        font-size: 70%;
+        overflow: hidden;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .logo-div {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .logo-div>a {
+        margin: 5rem 0 0 0;
+        border-radius: 50%;
+        background: linear-gradient(145deg, #24242f, #2b2b38);
+        box-shadow: 5px 5px 10px #22222c,
+            -5px -5px 10px #2e2e3c;
+        width: 6vh;
+        height: 6vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.8s ease;
+    }
+
+    .logo-div>a>svg {
+        width: 5vw;
+        color: #c4c3c3;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -159,6 +197,7 @@ html {
         display: flex;
         align-items: center;
         justify-content: space-around;
+        margin-right: 0;
     }
 
     .logo-div>a {

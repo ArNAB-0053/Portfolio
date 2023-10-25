@@ -279,6 +279,41 @@ circle {
     font-family: 'Mooli', sans-serif;
 }
 
+@media only screen and (min-width: 769px) and (max-width: 1062px) {
+    html {
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+    .container {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin: 0 0 -1rem 0;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        border-radius: 0.8em;
+        border-top-right-radius: 3rem;
+        border-bottom-left-radius: 3rem;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        width: 70%;
+        font-size: 70%;
+        margin-top: 4rem;
+    }
+
+    .skill {
+        margin-bottom: 2rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
     * {
         margin: 0;
@@ -362,9 +397,13 @@ circle {
         border-top-right-radius: 3rem;
         border-bottom-left-radius: 3rem;
         padding: 2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         width: 70%;
         font-size: 70%;
+        margin-top: 2rem;
+    }
+
+    #programminglang {
         margin-top: 4rem;
     }
 

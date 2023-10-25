@@ -208,12 +208,14 @@ body {
 }
 
 #projectDesc {
-    margin-top: 1vh;
+    margin-top: 2vh;
     margin-bottom: 2vh;
+    /* border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    padding: 0.4rem 0.2rem; */
 }
 
 .cerLink {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -239,31 +241,196 @@ body {
     font-weight: 700;
 }
 
-@media screen and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1328px) {
     html {
         font-size: 75%;
     }
 
-    .imgContainer {
-        width: 0;
-        height: 0;
-        display: none;
+    .container {
+        margin-top: -4rem;
     }
 
-    .eduContent {
-        height: 8rem;
-        width: 14rem;
-        position: relative;
-        top: 0;
+    .imgContainer {
+        height: 40vh;
+        margin-top: 7rem;
+    }
+
+    .imgContainer>img {
+        width: 30vh;
+        height: 37vh;
+    }
+
+    .educationContainer {
+        width: 100%;
+        flex-direction: column;
+        margin: -0.5rem 0 6rem 0;
+        padding: 0;
+        background: none;
+        box-shadow: none;
+    }
+
+    .education {
+        min-height: 20vh;
+        width: 100%;
+        flex: 1;
         display: flex;
         align-items: center;
         justify-content: center;
+        border-bottom-left-radius: 4rem;
+        border-top-right-radius: 4rem;
+        padding: 0;
+        flex-direction: column;
+        margin: 2rem 0;
+        background: linear-gradient(45deg, #2a2a32, #32323b);
+        box-shadow: 5px -5px 10px #26262d,
+            -5px 5px 10px #383841;
+    }
+
+    .educationContainer:hover>.education {
+        margin-top: 2rem;
+    }
+
+    .education>h2 {
+        margin: 2.5rem 1rem 0 1rem;
+    }
+
+    .eduContent {
+        width: 75%;
+        margin: 1rem 0;
+        background: #cdcdcd;
+        color: #24242f;
+        border-radius: 1.2rem;
+        margin-bottom: 2rem;
+        top: 0;
+        position: relative;
+        z-index: 0;
+    }
+
+    .eduContent>p {
+        font-size: 1.5rem;
+    }
+
+    .education:hover .eduContent {
+        position: relative;
+        color: #24242f;
+        top: 0;
+        z-index: 1;
+        border-radius: 1.2rem;
+        background: #cdcdcd;
+    }
+
+    .eduContent>p {
+        font-size: 1.8rem;
+    }
+
+    #edu-p {
+        font-size: 1.6rem;
+    }
+
+    #highersecondary {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #ideathon {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .hackathonDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100%;
+        flex-wrap: wrap;
+    }
+
+    .hackathon {
+        height: 100%;
+        flex: 1 1 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding: 3vh;
         flex-direction: column;
         transition: all 0.8s ease;
-        z-index: 1;
-        padding: 1.2rem;
+        border: 2px solid #fff;
+        margin-top: 6rem;
+        border-radius: 2rem;
+    }
+
+    #hackfest {
+        margin-bottom: 12vh;
+    }
+
+    .hackathon:hover {
+        margin-top: 6rem;
+    }
+
+    .hackathonDiv:hover>.hackathon:not(:hover) {
+        margin-top: 6rem;
+    }
+
+    .hackathon>h2 {
+        margin-left: 0;
+    }
+
+    .hackathon>h2 {
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        margin-top: -8.5vh;
+    }
+
+    .hackathon>p {
+        font-size: 1.4rem;
+    }
+
+    #projectDesc {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        margin: 1.4rem 0;
+        padding: 1rem 0.1rem;
+    }
+
+    .cerLink {
+        padding: 0.5rem 1.5rem;
+    }
+
+    .cerLink>a {
+        font-size: 1.3rem;
+    }
+
+    #hackfest {
+        margin-top: 14rem;
     }
 }
+
+/* @media screen and (max-width: 1012px) {
+    #hackfest {
+        margin-top: 6rem;
+    }
+
+    #ideathon {
+        margin-right: 0;
+    }
+
+    .hackathon {
+        height: 100%;
+        flex: 1 1 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding: 3vh;
+        flex-direction: column;
+        transition: all 0.8s ease;
+        border: 2px solid #fff;
+        margin-top: 6rem;
+        border-radius: 2rem;
+    }
+} */
 
 @media screen and (max-width: 768px) {
     html {
@@ -361,7 +528,11 @@ body {
     }
 
     .eduContent>p {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
+    }
+
+    #edu-p {
+        font-size: 1.6rem;
     }
 
     .education:hover .eduContent {
@@ -436,6 +607,27 @@ body {
         align-items: center;
         justify-self: center;
         margin-top: -8.5vh;
+    }
+
+    .hackathon>p {
+        font-size: 1.4rem;
+    }
+
+    #projectDesc {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        margin: 1.4rem 0;
+        padding: 1rem 0.1rem;
+    }
+
+    .cerLink {
+        padding: 0.5rem 1.5rem;
+    }
+
+    .cerLink>a {
+        font-size: 1.3rem;
     }
 
     #myedu {

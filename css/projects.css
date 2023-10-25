@@ -130,6 +130,30 @@
     justify-content: center;
 }
 
+@media only screen and (min-width: 769px) and (max-width: 1062px) {
+    .project {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .container {
+        margin-top: -2rem;
+    }
+
+    .project:hover {
+        margin-top: 1rem;
+    }
+
+    .content:hover>.project:not(:hover) {
+        margin-top: 1rem;
+    }
+
+    .projectgithubLink {
+        margin-top: -0.1rem;
+        margin-bottom: 12rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
     * {
         margin: 0;
